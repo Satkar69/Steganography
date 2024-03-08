@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+.snip1143 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.snip1143 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1143 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+.snip1143 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+.snip1143 a:before,
+.snip1143 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1143 a:before {
+  top: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #c0392b;
+}
+.snip1143 a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+.snip1143 li:hover a,
+.snip1143 .current a {
+  transform: translateY(-100%);
+}
+  /* Demo purposes only */
+body {
+	height: 90vh;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	background: #212121;
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+
+
+    </style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 14px/1 'Roboto', sans-serif;
+  color: #fff;
+  background: url('https://codepen.io/images/classy_fabric.png') #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+
+[placeholder]::-webkit-input-placeholder { color: rgba(255,255,255,.8); }
+[placeholder]:hover::-webkit-input-placeholder { color: rgba(255,255,255,.4); }
+[placeholder]:focus::-webkit-input-placeholder { color: transparent; }
+
+[placeholder]::-moz-placeholder { color: rgba(255,255,255,.8); }
+[placeholder]:hover::-moz-placeholder { color: rgba(255,255,255,.4); }
+[placeholder]:focus::-moz-placeholder { color: transparent; }
+
+[placeholder]:-ms-input-placeholder { color: rgba(255,255,255,.8); }
+[placeholder]:hover:-ms-input-placeholder { color: rgba(255,255,255,.4); }
+[placeholder]:focus:-ms-input-placeholder { color: transparent; }
+
+form {
+  width: 400px;
+  margin: 50px auto;
+}
+
+input[type="text"] {
+  display: block;
+  width: 400px;
+  margin: 0 0 20px;
+  padding: 8px 12px 10px 12px;
+  border: 1px solid rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
+}
+
+textarea {
+  display: block;
+  width: 400px;
+  height: 150px;
+  margin: 0 0 20px;
+  padding: 8px 12px 10px 12px;
+  border: 1px solid rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
+}
+
+.radio {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 20px 0;
+}
+
+.radio input[type="radio"] {
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.radio label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radio input[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -3px 5px 0 -15px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: fontawesome;
+  line-height: 19px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
+}
+
+.radio input[type="radio"] + label:before {
+  border-radius: 50%;
+}
+
+.radio input[type="radio"]:hover + label:before {
+  content: '\f111';
+  font-size: 9px;
+  color: rgba(255,255,255,.4);
+}
+
+.radio input[type="radio"]:checked + label:before {
+  content: '\f111';
+  font-size: 9px;
+  color: rgba(255,255,255,.8);
+}
+
+.radio .sex {
+  font: 20px fontawesome;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 150px;
+  margin: 0 0 20px;
+  padding: 8px 0 10px 0;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
+}
+</style>
+
+
+</head>
+<body>
+    		
+    <ul class="snip1143">
+        <li><a href="{% url 'home' %}" data-hover="Home">Home</a></li>
+        <li><a href="{% url 'encryption' %}" data-hover="Encrypt">Encrypt</a></li>
+        <li><a href="{% url 'decryption' %}" data-hover="Decrypt">Decrypt</a></li>
+    </ul>
+    {% block container %}
+
+    {% endblock container %}
+</body>
+<script>
+    // Get the current URL path
+    var path = window.location.pathname;
+
+    // Find the corresponding link and add the "current" class
+    var links = document.querySelectorAll(".snip1143 a");
+    for (var i = 0; i < links.length; i++) {
+        // Check if the href attribute matches the path exactly or ends with the path (for handling subdirectories)
+        if (links[i].getAttribute("href") === path || (links[i].getAttribute("href") !== "/index" && path.startsWith(links[i].getAttribute("href")))) {
+            links[i].parentNode.classList.add("current");
+        } else {
+            // Remove the "current" class from other links
+            links[i].parentNode.classList.remove("current");
+        }
+    }
+</script>
+
+
+</html>

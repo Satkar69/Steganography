@@ -1,0 +1,14 @@
+{% extends 'stagenography/base.html' %}
+
+{% block container %}
+<form method="post" enctype="multipart/form-data">
+  {{message}}
+  {% csrf_token %}
+    <div class="radio" style="margin-top: 20px;">
+      <input id="value5" type="file" name="image" accept="image/jpeg,image/gif,image/png,image/x-eps" required>
+      <label for="value5"></label>
+    </div>
+    <textarea placeholder="Your Message" name="text" required></textarea>
+    <input type="submit" value="Encrypt" />
+</form>
+{% endblock container %}
